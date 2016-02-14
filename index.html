@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JS Rocket</title>
-	<script type="text/javascript" src="js1/script.js">	</script>
-	<link rel="stylesheet" type="text/css" href="css1/style.css">
+	<title>Rocket Launch sequence!</title>
+	<link rel="stylesheet" type="text/css" href="css1/rocket.css">
+	<script type="text/javascript" src="js1/rocket.js"></script>
 </head>
-<body>
-	<h1>hello js rocket</h1>
-	<p><a href="#" onclick="car.fly();">Click here to see my special power!</a></p>
-	<p></p><a href="#" onclick="carOnNow('On');">Click Me!</a></p>
-	<p><a href="#" onclick="sayMyName('Nick');">Click here to see my name!</a></p>
-	<p><a href="#" onclick="whatAmI('Genius');">Click here to see another great me!</a></p>
-	<p><a href="#" onclick='doCoolStuff();'>Click here to be cool like Rich!</a></p>
-
-	<div class="cool" id="cool">
-		<p><center>Hello Rich is Cool<center></p>
-</body>
+<body class="body-state1">
+	<div class="left">
+		<div class="interface state1">
+			<h1>JS Rocket Launch!</h1>
+			<a href="#" class="button" onclick="changeState(2);">Launch!</a>
+		</div>
+		<div class="interface state2">
+			<h1 id="countdown">10</h1>
+			<a href="#" onclick="changeState(1);">Abort!</a>
+		</div>
+		<div class="interface state3">
+			<h1>Lift Off!</h1>
+		</div>
+		<div class="interface state4">
+			<h1>Well done!</h1>
+			<a href="#" class="button" onclick="changeState(1);">Do it again!</a>
+		</div>
+		<div class="interface state5">
+			<h1>Oh No!!!!</h1>
+			<a href="#" class="button" onclick="changeState(1);">Try again!</a>
+		</div>
+	</div>
+	<div class="right">
+		<div class="ground"></div>
+		<div class="rocket"></div>
+		<div class="nervous" id="nervous"></div>
+		<div class="cant-wait" id="cant-wait"></div>
+	</div>
 </body>
 </html>
-
-

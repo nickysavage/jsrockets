@@ -1,2 +1,2 @@
 # jsrockets
-Another Javascript project
+Javascript project
